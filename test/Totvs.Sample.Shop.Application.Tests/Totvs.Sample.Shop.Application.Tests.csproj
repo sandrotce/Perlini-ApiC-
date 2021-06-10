@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Version>2.0.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Shouldly" Version="3.0.2" />
+    <PackageReference Include="Tnf.TestBase" Version="2.9.6.1401" />
+    <PackageReference Include="Tnf.AspNetCore" Version="2.9.6.1401" />
+    <PackageReference Include="Tnf.AutoMapper" Version="2.9.6.1401" />
+    <PackageReference Include="Bogus" Version="28.0.3" />
+    <PackageReference Include="FluentAssertions" Version="5.9.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
+    <PackageReference Include="MOQ" Version="4.13.0" />
+    <PackageReference Include="MOQ.automock" Version="1.2.0.120" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.console" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Totvs.Sample.Shop.Application.Bulk\Totvs.Sample.Shop.Application.Bulk.csproj" />
+    <ProjectReference Include="..\..\src\Totvs.Sample.Shop.Application.Single\Totvs.Sample.Shop.Application.Single.csproj" />
+    <ProjectReference Include="..\..\src\Totvs.Sample.Shop.Application\Totvs.Sample.Shop.Application.csproj" />
+    <ProjectReference Include="..\..\src\Totvs.Sample.Shop.Domain\Totvs.Sample.Shop.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Totvs.Sample.Shop.Infra.SqLite\Totvs.Sample.Shop.Infra.SqLite.csproj" />
+    <ProjectReference Include="..\..\src\Totvs.Sample.Shop.Infra\Totvs.Sample.Shop.Infra.csproj" />
+  </ItemGroup>
+
+</Project>

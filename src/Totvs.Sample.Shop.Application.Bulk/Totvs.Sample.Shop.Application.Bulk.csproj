@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup> 
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+  </PropertyGroup>
+    
+  <ItemGroup>
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Handles" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+  </ItemGroup>
+    
+  <ItemGroup>
+    <ProjectReference Include="..\Totvs.Sample.Shop.Application.Single\Totvs.Sample.Shop.Application.Single.csproj" />
+    <ProjectReference Include="..\Totvs.Sample.Shop.Application\Totvs.Sample.Shop.Application.csproj" />
+    <ProjectReference Include="..\Totvs.Sample.Shop.Domain\Totvs.Sample.Shop.Domain.csproj" />
+    <ProjectReference Include="..\Totvs.Sample.Shop.Infra\Totvs.Sample.Shop.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
